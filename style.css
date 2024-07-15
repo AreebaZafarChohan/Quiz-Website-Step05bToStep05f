@@ -1,0 +1,159 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(bg.jpg);
+    margin: 0;
+    padding: 1rem;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#steps {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+hr.double_line {
+    margin-bottom: 20px;
+    height: 3px;
+    border: 0;
+    border-top: 5px double black;
+    width: 100%;
+}
+
+input[type="radio"]:checked {
+    background-color: rgb(153, 14, 153);
+    border-color: rgb(153, 14, 153);
+}
+
+h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.btn {
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 0 2rem;
+    height: 3rem;
+    border-radius: 2rem;
+    background-color: rgb(54, 112, 236);
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem; /* Add margin to separate buttons */
+}
+
+button:hover {
+    background-color: rgb(40, 27, 221);
+    color: black;
+}
+
+.question {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+label {
+    padding-left: 0.5rem;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    min-width: 100%;
+    min-height: 3rem;
+    border-radius: 1.5rem;
+    border: 0.2rem solid rgb(224, 224, 224);
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+li:hover {
+    background-color: rgb(48, 118, 199);
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid black;
+    width: 100%;
+}
+
+#quiz {
+    background-image: url(bg2.jpg);
+    background-size: cover;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.result {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start */
+    padding: 1rem;
+}
+
+.result h2 {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.result p {
+    font-size: 1rem;
+    margin: 0.5rem 0; /* Add some margin between paragraphs */
+}
+
+.result.view-answers p {
+    margin: 0.2rem 0; /* Reduce the margin between paragraphs for answers */
+    font-size: 1rem;
+}
+
+/* Add this new class to style buttons within the result */
+.result-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}
